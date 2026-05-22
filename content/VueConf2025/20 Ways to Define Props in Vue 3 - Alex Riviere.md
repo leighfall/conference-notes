@@ -1,0 +1,11 @@
+- Generic Prop Definition: `props: ['modelValue', 'name', 'options']`
+- Add some types: `props: { modelValue: [String, Number], name: String, options: Object }`
+- Expand definition: `props: { modelValue: { type: [String, Number], required: true, default: false } }`
+	- For objects, use a function to get a new instance so all component instances don't share the same object: `() => ({})`
+- Validator function (look this up for script setup)
+- Run Time vs. Build Time
+	- Run time is interpreted in the browser and can be used in any JavaScript interpreter
+- SFC Magic
+	- `<script setup>` — `const props = defineProps(['modelValue'])`
+	- `interface Props extends someType {}` and then spread it in the defaults so it only needs to be changed in one place
+- `useMagicProps` — there's no reason for this

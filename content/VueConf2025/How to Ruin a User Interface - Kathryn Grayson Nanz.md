@@ -1,0 +1,41 @@
+- Modals — we don't like them when they are random ads
+	- Having one appear after a button click is fine. Still unexpected, but the user expected something to happen
+- 'Submit' and nothing happens
+- Clear as Mud
+	- Match between system and the real world
+	- Vague language and unrecognizable icons
+	- Users want signs, labels, wayfinding, identifiable symbols, non-industry specific terms, content tailored to their experiences, understandable language (Human Centered Design)
+- High Stakes
+	- Users won't get everything right the first time
+	- Users can freely experiment when they know the stakes are low
+		- Undo actions
+		- Move freely forward and backwards
+		- Revert to original
+		- Escape or cancel mid-process
+		- Find your way back home
+		- Change your mind
+- Consistency and Standards
+	- Mental model — the understanding a user builds and the assumptions they make about their current experience, based on similar experiences they've had (ie. clicking on the logo takes them home)
+	- Cognitive load — amount of mental effort and energy it takes to complete a task
+	- Adobe suite — each app has different keyboard shortcuts
+- Errors
+	- Users make errors. Make it less likely they will.
+		- ie. having actions on phone on the right side — people usually use their right thumb to scroll
+	- Challenge their memory
+		- Work on the assumption users will forget how to use the system. Prompt them regularly
+		- Unlabeled icons are an unkind example
+		- The 'gear' icon should be settings
+- My way or the highway
+	- New users vs experienced users are going to use a form differently
+- Unsolvable errors
+	- Users need to understand what the error was so they can try and fix it
+	- Recognition, diagnosis, recovery
+	- At least give them good errors if you are going to give them errors
+- Lack of external resources
+- UI
+	- Maximalism — too much stuff
+		- Every item on the page should serve a purpose to the user
+	- Keep things moving — animations
+	- No Order in the Court — ordering elements on the page correctly — Gestalt Principles, visual hierarchy
+	- Dark Patterns — intentional trickery
+	- Typography — large, bold, easy to read — emotional match

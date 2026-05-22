@@ -1,0 +1,8 @@
+- Rubber ducking
+- Share how the project is going, not just what's getting done
+- Remember that you are on the same side
+- Set boundaries and define "good enough"
+- Reminders
+	- Be the kind of coworker you'd like to have
+	- It's never that deep
+	- Everyone is on the same side and is just trying to get through the work day and get on with their lives

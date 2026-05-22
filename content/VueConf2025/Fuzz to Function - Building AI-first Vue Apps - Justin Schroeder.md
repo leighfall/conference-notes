@@ -1,0 +1,44 @@
+- An app where the primary input mechanism is non-deterministic
+- No standard approach
+	- What UI do you provide to users?
+	- Can you rely on one-shot answers? Can you expect accuracy and reliability?
+	- Do you need to build an agent? What is an agent?
+	- How to get structured data?
+- Lack of personal intuition
+	- Some models respond better to XML, others to plain text, others to markdown
+- No or poor existing tooling for building apps with AI
+	- Realtime stream parsers
+	- Evaluating and testing
+	- Chaining
+	- State/memory
+	- Model routing
+	- Stream multiplexers
+	- Context injection
+	- Structure validators
+- Models are stupid or stupidly expensive
+- Solutions
+	- Use a router
+		- Query comes in. Send to router (another LLM)
+		- Router tries to sort the query into an LLM tool, which has a series of functions
+		- Do something deterministic based on that
+		- Get the reply, then put it back in the router
+	- Use tools
+		- Telling the LLM that "tools" are real
+		- "User just said they like a green shirt" — they can buy the shirt, try it on, etc
+	- Use streaming
+		- Dispatch chained requests faster
+		- Update the UI in realtime
+		- Allows better introspection through `ReadableStream.tee()`
+	- Might want to use multiplexing
+	- Start with a cheap model, like gpt-4.1-mini or flash-2.5
+		- Get the architecture right first, then it'll become apparent where prompting needs adjustment vs where you need something more sophisticated
+		- No decision-making
+- Build an intuition for prompts
+	- LLMs are stateless
+		- ChatGPT takes your message, concatenates it to your other messages, and sends the entire thing to the model
+	- Constrain the LLM to a small number of decisions, then give it minimal guidance
+	- Describe tools in the system prompt and the tool descriptions
+	- Put dynamic data at the end
+	- Do not inject context in the user prompt, use an artificial tool call
+- AI does well when returning paragraphs
+- Example product bod.coach is all Cloudflare

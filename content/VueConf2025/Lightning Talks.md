@@ -1,0 +1,56 @@
+- Handle Frontend Version Skew with Vite and Vue Router
+	- Frontend version skew is when a new build is deployed while connected clients still have the old website loaded
+		- Assets from previous deployment are deleted
+		- Client tries to access chunk via router navigation and async import
+		- Network request fails
+		- Vue Router throws an error and stops navigation
+	- How to fix:
+		- Catch async chunk loading errors
+		- Catch router errors with `router.onError()` hook. Verify the error is a chunk error
+		- `vite:preloadError` to the rescue
+		- Combine with Vue Router
+			- `window.addEventListener("vite:preloadError", event => {})`
+			- `router.onError`
+			- `reloadAppAtPath(to: RouteLocation) { const path = joinUrl(import.meta.env.Base_Url) }`
+- Design Driven Prompts (Amazon Q)
+	- What is design driven prompts
+		- Keep track of progress, get insight into what Q is going to do next, provide sensible breakpoints for rollback, reference files for detailed instruction
+	- Setup rules
+		- Using rules to define your style (eg. commit after every change)
+		- Use Q CLI to write them
+		- Helps avoid lengthy prompts to achieve baseline standards
+	- How to begin
+		- Ask Q Dev what it should do
+		- Include:
+			- Business Context
+			- User Requirements
+			- Functional Specs
+			- Technical Details
+		- Review
+			- Review markdown for inconsistencies, hallucinations, etc
+			- Give it a markdown, review the markdown, have it implement each step one at a time
+- Side Projects
+	- Problems: either it keeps going and you never finish, or it's been dead but you keep updating it
+	- Concept definition — self-initiated, driven by personal interest, curiosity, desire to learn
+	- Side projects as a mentor
+		- Learn something new
+		- MVP-ish project creates a journey of applied knowledge and a learning community
+	- Side projects as a sidekick
+		- Self advocacy. Demonstrate competence/confidence in something learned, understood, and applied to a problem
+		- Code speaks for you
+	- Side Projects: Why?
+		- Language/tooling changes, learning is continuous, docs don't always get it right
+	- How? — define end goal, MoSCoW method (must-have, should, could, won't), smallest thing you can launch, regularly work on
+	- Accessibility — not a backup thing. Now. Start with first requirement. Same with tests.
+- Autofix All the Vue Issues
+	- How do you know if your app breaks in production? Usually you find it yourself or a user reports it
+	- Solution: Production Monitoring
+		- `@sentry/vue` library
+		- Trace context connects the dots. More context → AI gets supercharged
+		- github.com/getsentry/seer
+- Coding and ADHD: Where We Excel
+	- Distractibility — absorbing all the information, connections, pattern recognition, systems thinking
+	- Creativity — hyperactivity, constantly brainstorming, reject the status quo, thinking outside the box
+	- Hyperfocus — struggle to pull focus away, curiosity, don't stop to ask if it's hard, willing to work long hours
+	- Rabbit holes
+	- Easy to reset and reward — we love sprints and tickets

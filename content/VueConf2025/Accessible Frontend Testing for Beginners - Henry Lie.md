@@ -1,0 +1,43 @@
+- Popular testing tools: Vitest, Playwright
+- As it relates to accessibility
+	- Touchscreen issues
+		- Lose access to hover events
+		- Small clickables hard to tap
+		- Mouse-specific event handlers
+		- Back gesture behavior
+	- Visibility
+		- Do stakeholders care about accessibility? They should. Because laws. Also caring.
+		- How do you measure disabled users? Do you know how many have partial blindness? How many don't use a mouse?
+		- Curb-cut effect — one of my favorite examples of how accessibility helps everyone
+		- Selectors — queries accessible to everyone: `getByLabelText`, `getByDisplayValue`, etc.
+			- `getByAltText`, `getByTitle`, `getByTestId` are less ideal selectors
+		- Accessibility Tree — enable in devtools. Not enabled by default
+		- Axe DevTools for automated checks — also integrates with Playwright
+- The Testing Trophy
+	- End to End
+		- Playwright, Cypress, Puppeteer
+		- Like integration, but removing most mocks
+		- Tests critical paths
+		- Visual regression tests
+		- Runs infrequently (nightly) on CI against a dedicated environment — very heavy
+	- Integration
+		- Vitest or Playwright
+		- Multiple units working properly together
+		- Runs mainly on the CI pipeline
+		- Mocks any service outside of the frontend code (mocked or backend APIs)
+	- Unit
+		- Vitest, Jest
+		- Small, isolated business logic
+		- Can run during watch mode, git hooks like pre-commit, CI pipeline on every push
+	- Static
+		- TypeScript, eslint — free safety for low effort
+		- Mainly runs during development in your editor
+- Where to start when there are no tests?
+	- When starting out: set up TypeScript and linters with strict rules, mostly integration test in detail for each page, adopt TDD to follow the acceptance criteria
+	- Establish API contract early with schemas
+	- Mock fetch. Don't assert whether it happened, but rather the result the user is going to see
+	- If the project is already done:
+		- Start with basic e2e tests — gives best confidence. FE and BE are already integrated and operational
+		- Basically automating manual testing
+- Challenges
+	- 3rd party API testing: limited by downtime, rate limits, usage quota, effort to automate (like 2FA). It's okay to mock these — they aren't our responsibility to test

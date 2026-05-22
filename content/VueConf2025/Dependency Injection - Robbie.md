@@ -1,0 +1,12 @@
+- Vue's provide/inject can be a powerful way to share data across components — particularly helpful for component libraries (Vuetify, PrimeVue) and plugins (vue-router)
+- Examples: props, slots, stores, provide/inject
+- `provide('message', readonly(dynamicMsg))` — use readonly to keep child from mutating the value, similar effect to preventing prop mutation
+- If you want the child to change the parent's value, create an update function in the parent
+- Symbol Injection Keys (`Symbol()`)
+- When to use:
+	- Sharing data between parent and all descendants
+	- Large number of props being drilled down
+	- Don't have access to a store
+	- Plugins
+	- Component libraries
+- `useRouter` is a real-world example

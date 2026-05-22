@@ -1,0 +1,6 @@
+- Each layer has its own nuxt.config.ts and can have its own package.json. Must have the config — it should be the entry point
+- Layers are automatically registered in Nuxt v3.12.0
+- Domain Driven Design pattern — can create a `/domains` directory and manually import pre-built and pre-configured local layers as needed (what is Domain Driven Design?)
+- Layer repositories
+- Layers can extend other layers
+- VueUse Composables is apparently really good

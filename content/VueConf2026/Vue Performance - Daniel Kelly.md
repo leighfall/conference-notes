@@ -12,7 +12,7 @@
 		- Prop stability
 		- vmemo with vfor is powerful
 		- shallowRef
-	- Lazy Hydration. Vue 3.5 lets you choose when hydration happens. SSR ships HTML fast (I should learn more about SSR)
+	- Lazy Hydration. Vue 3.5 lets you choose when hydration happens. SSR ships HTML fast
 	- Render on user intent. When they go to do something, render ahead of time in the background, instead of always being rendered
 	- SPA, SSG (Nuxt, Astro), SSR
 	- **Start all projects going forward with Nuxt instead of Vue**

@@ -1,0 +1,3 @@
+- Progressive framework built on Vue.js
+- Best practices built in
+- nuxt.com/modules

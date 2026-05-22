@@ -1,0 +1,2 @@
+- RAG — makes things like Verba possible — github.com/weaviate/Verba
+- Reflection patterns

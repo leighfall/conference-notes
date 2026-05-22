@@ -1,0 +1,46 @@
+- Why AI? Produce code more quickly, surface solutions you might not think of, helps you think at a higher business level
+- Using AI to write code — Cursor
+	- Generates code in multiple files
+	- Runs commands
+	- Manage/revert with git
+	- Writes file to system before accepting changes so you can preview output
+	- Generating components, tests, or full features
+	- Create a rules file
+- General Workflow Tips
+	- Generate a task list and ask AI to mark off tasks one at a time
+	- Don't generate everything from scratch. Use libraries
+	- Provide screenshots
+	- Commit early and commit often
+	- Don't trust the bot
+	- Don't try to do everything at one time
+	- Use .cursorrules or project rules for preferences and patterns
+	- Copy and paste examples of your API payloads, JSON data, etc to pass the LLM
+	- Make sure MCP is from a secure source as it can run commands on the machine
+	- Context7 MCP
+- Using AI inside of the actual code
+	- Use Cases
+		- Extracting text from an image, generating image alts
+		- Translating text to a different language
+		- Semantic search with RAG
+		- Summarizing content
+		- Generating images and videos
+		- Totally rethinking how users interact with your app
+		- Use the right model for the right task to save money
+		- Provide examples in the prompt
+		- Ask for JSON-only responses from data (or XML)
+	- AI SDK
+		- Unifies API for different providers
+		- Support for tool calls
+		- Supports streaming
+	- AI for TypeScript
+	- Issues
+		- Mitigate latency with streaming or queues as it is usually slow
+		- JSON Reader — stream JSON incrementally
+		- Chunk larger requests into smaller pieces. Instead of 30 questions, 10 at a time
+- Tools
+	- database.build
+	- Supabase SQL AI — write queries, debug query issues, setup RLS policies, and more
+	- Photoshop — generative fill, object removal, generative expand
+	- Eleven Labs — convert text to (fairly convincing) speech
+	- Runway — video generation
+	- danielkelly.io

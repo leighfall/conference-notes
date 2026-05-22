@@ -1,0 +1,23 @@
+- Can get all Nuxt 4 breaking changes today
+- New folder structure
+	- Nesting a bunch of folders under `app`
+	- `shared` folder usable in both app and server (contextless)
+	- Import protection
+	- Auto import for `shared/utils` and `shared/types`
+- Lazy/Delayed/Partial Hydration
+	- Implemented in Vue 3.5
+	- First class citizen in Nuxt 3.16
+	- `<LazyMyComponentHere hydrate-never>` — saves cycles, doesn't load the JavaScript
+	- `hydrate-on-idle`
+	- Requires auto-importing
+- Nuxt without Vite
+	- Multi-bundler framework
+	- Can use with webpack, rspack, or Vite (default)
+- Caching and BFF without Nitro
+	- Build fullstack applications
+	- Can wrap existing backend
+	- End-to-end type safety
+	- Caching on server easily possible
+	- Storage and runtime agnostic
+	- nuxt.config.ts
+- Nuxt dev

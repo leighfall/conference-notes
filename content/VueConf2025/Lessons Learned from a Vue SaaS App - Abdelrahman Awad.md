@@ -1,0 +1,17 @@
+- Rasayel — means "messages" — allows businesses to communicate with customers (marketing, etc)
+	- A fully featured realtime WhatsApp Inbox
+	- Dynamic bot builder
+	- Campaigns, contact manager, reporting dashboard, AI conversational toolkit, CRM integrations, permission/role system
+	- Vue.js, GraphQL, TypeScript
+- Use `readonly` for fixing mutability
+- Provide/Inject
+	- Pros: top-down direction, provider ownership
+	- Cons: which keys to inject, which functions to avoid
+- Singletons
+	- Single instance, shared across component trees, but unclear ownership (the first component that called it owns it)
+	- Have to avoid teardown with lifecycle hooks
+	- Doesn't work with composables
+- Self-Inject
+	- Top-down flow, hides implementation details
+	- May end up with multiple instances, doesn't work with composables with arguments
+- Polling vs WebSockets

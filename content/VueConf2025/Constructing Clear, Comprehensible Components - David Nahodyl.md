@@ -1,0 +1,37 @@
+- Using the right native HTML elements
+	- Functionality you don't need to build yourself, like keyboard actions
+	- Great for both accessibility and power users
+	- Fewer decisions about how the components behave
+	- Examples:
+		- Forms: `<form @submit.prevent="">` vs `<button @click="submit">`
+		- Radio Inputs, using `<input>` and `<label>`
+		- File Inputs, use `<input>`
+		- Buttons as links — make a separate link button component, but not a great solution for maintainability
+- Look at standard elements
+	- Start with the closest standard element and consider how it works. Does it have children?
+	- Discouraged `<template>` over default slots. If there are headers and footers, use named slots and keep the default for actual content
+- `$attrs` and Fallthrough Attributes
+	- `v-bind="$attrs"` on the actual HTML element so that when attributes fall through in nested components, they still land at the right spot
+- Events
+	- Emit `@click` instead of `@onClick` or `@clicked`
+	- w3schools.com/jsref is a good place to start with naming events
+	- Emit standard events:
+		- One less name to come up with
+		- Components can be used in place of base HTML elements
+		- Easier to reuse if events are standardized
+		- Be careful about the type of event, not just the name
+	- Playwright example: `<InputText>` vs `<InputNumbers>`. InputText was emitting `@input` InputEvent vs `@input` `{ originalEvent: KeyboardEvent }`
+- Complex Components
+	- `defineModel()` — cleaner than props + emit for two-way binding
+	- Example: Search
+		- `<input type="search">` — emitting input and search events. Use `@search` (not `@searchedUsers` etc). `@change`.
+	- V-slot
+- Setting Boundaries with Style and Layout
+	- Components should not overreach. Only care about what they have going on
+	- CSS shouldn't cross component boundaries. Let styles come from outside and be passed down as props (probably could do better on this)
+	- Margins and positioning shouldn't come from inside the component
+	- Single root element. Vue 3 supports multiple, but a single root is better
+- Takeaways
+	- Be more diligent about using native elements and their native event handlers
+	- Better handling of CSS and where things are taken care of
+	- Usage of `defineModel`?

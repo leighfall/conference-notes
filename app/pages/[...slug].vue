@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { queryCollection } from '@nuxt/content/server';
+import { useAsyncData, createError } from 'nuxt/app';
+import { useRoute } from 'vue-router';
+
 const route = useRoute()
 
 const { data: page } = await useAsyncData('page-' + route.path, () => {
