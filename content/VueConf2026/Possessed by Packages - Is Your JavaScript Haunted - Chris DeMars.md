@@ -1,0 +1,38 @@
+- This guy takes his slides very seriously
+	- Should be a masterclass in creating slides honestly. Gave shoutouts to the conference itself and the sponsors
+	- DeveloperCommunity
+- The haunting
+	- Infestation
+	- Obsession
+	- Oppression
+	- Possession
+- The signs
+- The fixes
+- npm ls
+	- For a list of dependencies in the code
+	- npm ls -all for everything...
+- Typosquatting - an attacker registers a package that is off by a letter or has too many letters. crossenv was a good one. Copy and paste the command from the documentation
+- Dependency Confusion - nearly 49% of orgs are exposed to risks of dependency confusion attack
+	- Configure your .npmrc file to only pull from a private registry and CI/CD platform.
+	- Scope your packages `@scope/your-package`
+- Backdoors - Malware injection, phishing attacks, unpatched software
+	- Data and privacy loss
+	- Operational and financial damage
+	- System Integrity
+	- Legal risks
+- Little Snitch shows all the things your computer is doing
+- npm audit should be ran just like git status
+- Pin dependencies and commit your lock file
+- Be wary of postinstall scripts
+	- Use pnpm (by default ignores pre and post install scripts)
+	- Or just ignore the scripts`npm install some-package --ignore-scripts`
+- Software Composition Analysis
+	- snyk is a good tool
+- Security Policy - GitHub has built in. Protecting branches, etc.
+- SLSA - security framework
+- Have a Team Policy in place - stop cutting corners
+- Action Items
+	- npm audit
+	- do npm ci in the builds from here on out
+	- Pin dependencies
+- shownotes.tuxcare.com/possessed-by-packages-is-your-javascript-haunted-2-2-2-2/

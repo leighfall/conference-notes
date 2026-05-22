@@ -1,0 +1,19 @@
+- difference between having an LLM in the app call the API in the background, and actually go through the UI actions. Comparable to playwright testing through the UI vs using its built in API calls
+- Cool idea of adding an LLM to an app that is a training tool, or an onboarding tool. Keeps users, particularly power users, from having to google to figure out how to do maybe an advanced thing
+- Global tool Store - Pinia
+	- Register the tool
+	- Mounted doesn't always mean available
+- Pass tools to the LLM
+	- Vercel API Abstraction
+	- Make sure tool is granular. Instead of one tool that does all the CRUD operations, have 4 different CRUD operations
+- Humans in the Loop
+	- Figure out risks to determine how much you need to be in the loop.
+	- Undo beats Confirmation
+	- Approval UI
+- The System Prompt
+	- Similar to your own claude.md file, but for a fresh user.
+- Prompt engineering is interface design
+- Snapshot testing
+- AI testing for testing AI?
+- Vue component lifecycle is nice fit for AI
+- Don't build your own CMS (xD)

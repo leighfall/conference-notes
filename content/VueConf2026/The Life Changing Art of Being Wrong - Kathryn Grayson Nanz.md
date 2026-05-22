@@ -1,0 +1,18 @@
+- Assumptions
+	- Falsehoods that programmers believe about names (there's a whole website on this). Wouldn't the fix for this be one field that is 'Full Name' that allows all characters necessary, and don't use this as a unique identifier
+	- My users can read the user interface. English as a second language. Literacy level (In America, 54% can't read at a 7th grade reading level)
+	- Interface literacy (don't know the difference between click and double-click, or identifying the Save button, zooming in on a touch screen)
+	- Users choose to be here
+	- Users will use the interface. I made a button. I assume they will use the button. But not if they use a screen reader or adaptive switches or eye tracking technologies
+	- Software or the internet is not the 'real world'. Examples are when people try to complete employee benefits online but it's bad. Or when something like Facebook shows a memories notification, and that includes someone that's passed away, causing you grief
+- How to Be Wrong (Better)
+	- Usability Tests (high level talk or oreilly course by her)
+	- The 5 Whys
+		- Define a problem statement, ask Why, consider the answer, ask Why again, consider that answer, repeat
+	- Determine the extreme personas to consider how they would interact with your app
+	- Mind mapping
+	- Online ethnography
+		- Identify a user group, find online spaces where they gather, follow creators, lurk, learn language used to describe problems, frustrations about existing tools, workarounds, pain-points, recurring questions (subreddit)
+	- Rewording - take sentences and think through whether there is more flexibility, more accurate wording, etc
+- Action Items
+	- Make things more assistive-technology friendly

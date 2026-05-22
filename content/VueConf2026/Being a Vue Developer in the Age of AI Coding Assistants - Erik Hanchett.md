@@ -1,0 +1,33 @@
+- One of the first things brought up is how we don't write code anymore. Although, even before AI, I can't say I wrote all my code by hand, not in the way I think about it. I did lots of copy pasta, tweaking, deleting, using snippets to generate templates.
+- Our expertise and taste are more valuable than ever before (takeaway: keep learning)
+- Where to begin?
+	- Pick a harness and a model (Kiro, Claude Code, Cursor, etc)
+	- Local models
+	- CLI over UI, Type over Talk
+	- Create rules for the AI. Include projects purpose, architecture, coding standards. Keep it brief. Living document
+	- Use skills (github.com/vuejs-ai/skills)
+		- github.com/antfu/skills
+		- Be careful about online skills. This is a solid attack vector (skills.sh has many regular skills but again be careful)
+	- Create agents or plugins
+- Setup an Agent Workflow - research, requirements, design, implementation, test
+- Don't go past 2 agents running at the same time
+- Setup Guardrails
+	- Tests or Vitests
+	- Linting
+	- CI Checks
+	- Code Coverage
+	- Error Tracking
+	- Pre-commit hooks
+- Code Reviews are the real bottlenecks
+- Spec Driven Development
+	- Spec-Kit
+	- Claude plan mode
+	- grill-me is a cool spec that asks clarifying questions
+- Vibe code prototypes
+- Action Items
+	- Take a look at some of the links ahead
+	- There's a Claude Code skill for creating skills.
+	- Based on the code review checkpoint, how can we make code reviews better and more efficient? What is a good workflow?
+		- I found for a lot of items, I could have Claude create seed data for different scenarios to take a look at them in the UI (the 'empty' case, a bunch of data, standard use, etc). I wonder if there is a way to streamline this
+		- I would ask Claude to summarize changes, tell me how to test changes (if not provided by the developer), walk me through code, etc.
+	- Look into grill-me

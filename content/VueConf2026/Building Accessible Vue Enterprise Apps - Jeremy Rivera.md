@@ -1,0 +1,24 @@
+Vue Considerations
+- v-if can remove elements and cause focus loss
+- v-show hides visually but keeps in the DOM. Make sure the content isnt reachable
+- Teleport changes where UI appears in the DOM. Manage focus, maintain proper reading order, etc
+- Slots can hide label and name requirements
+- Custom components can lose native semantics, such as creating a button from a div instead of using `button`
+- Reactive updates may not be announced
+- Broken Patterns
+	- Accessibility as a phase, such as doing it at the end of a feature
+	- Component drift, such as multiple button components
+	- Ownership ambiguity - someone else owns that
+	- Tool over-reliance
+- Code, Components, and Team Habits
+	- Code Level
+		- Tab through the UI before commiting
+		- Verify every interactive element has an accessible name
+		- Use native elements before custom ones
+		- Trigger actions using keyboard (enter or space)
+		- Open on screen reader pass before PR review
+- Break-fix loop - break something, you fix, something else breaks. Embedded model
+- Shift left with accessibility
+Action Items
+- Make things accessible! Possibly every time I touch a file, what can I do to make it acceessible? Or, can I start with reusable components?
+- Look into Embedded model

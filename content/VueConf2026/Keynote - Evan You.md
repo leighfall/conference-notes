@@ -1,0 +1,36 @@
+- LLMs are bad at picking up new API changes
+	- Doesn't need quality of life APIs. SFC has natural advantage in this sense
+	- Performance and correctness improvements benefit both human and AI
+- Vue's focus
+	- Don't change what's working with API stability
+	- Performance - Vapor: same API, better performance
+	- Correctness - reactivity/alien-signals/language tools (what are alien signals?)
+- 3.6 - Vapor Mode
+	- VDOM feature parity has been reached. Focus is on performance and stability
+	- VitePress theme fully running on Vapor: github.com/vuejs/vitepress/pull/5179
+	- v-for performance optimization (github.com/vuejs/core/pull/14825)
+- Reactivity
+	- reactive-framework-test-suite is a test suite that verifies the behavior correctness in edge cases across different reactivity implementations. alien-signals is currently the only reactive system that passes every test
+- Test 3.6 beta
+- Vue Tooling
+	- Props completion rewritten to follow native TS behavior
+	- Fallthrough attributes checked
+- Take a look at Vize
+- Verter is an experimental vue compiler and lsp implementation
+- Vite 8
+	- Rolldown is Rust-based built on top of OXC and has feature parity with esbuild and rollup.
+	- vite.dev/blog/announcing-vite8
+- Oxlint - eslint built-in rules test conformance
+- Oxfmt - now in beta and 100% prettier conformance
+- Look into Vite+. In Alpha. may replace all the config files. viteplus.dev
+- Why does fast and unified matter in AI era
+	- Loop is making decisions using AGENTS.md, skills, MCP, rules, and then it reaches for tools including guardrails (linters), normalization, validation
+	- We want the last part to happen as early as possible
+	- AI accelerates idea to implementation
+- VOID. - Vite-native deployment platform
+	- Fullstack with auto infra provisioning
+	- Built on cloudflare but cloudflare account not needed
+	- Void is compatible with Nuxt, but Nuxt is not necessary as Void comes with file system routing
+	- Island component - rendered as static on the server and shipped as markdown, not JavaScript
+	- Revalidation - refreshes content for user
+	- End to end type safety - Start with Drizzle Schema

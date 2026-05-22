@@ -1,0 +1,64 @@
+- ROI - a popular profitability metric used to determine how well something has performed
+- Want the tests to work for you, not you working for your tests
+- Want an investment strategy, which is a set of guiding principles to help an investor achieve their financial goals. Usually using money as our metric, but when we are talking about tests, it is usually talked about in 'time' (which indirectly maps to money)
+- Value of tests
+	- reduce cost of manual testing
+	- make codebase healthier over time
+	- reduce debugging
+	- provide confidence in code
+	- leads to faster development
+	- guard against introducing defects
+- Some tests are liabilities (cheap up front, costs over long time)
+	- time spent writing, running, maintaining, figuring out what went wrong when they fail
+	- more dependencies = more costs
+		- database or API calls
+		- items in the browser or the browser itself
+- Rate of return - net gain or loss over a period of time, expressed as a percentage
+- Useful life - number of years that an asset remains generating
+- Keep costs low, increase useful life
+- What's the rate of return on tests?
+	- Are they catching defects?
+	- Do they give you confidence when you introduce changes?
+	- If they fail, is it for a reason?
+	- Do they save you time? Or do you have to spend more time maintaining them?
+- Over time, tests can help your codebase be more maintainable over time
+- Can also break down and become liabilities over time
+- Total cost of ownership - boats are a great example of the total cost of owning something
+- Asset allocation - investment strategy that aims to balance risk and reward by apportioning a portfolio's assets over time using diversification
+- Create a diverse portfolio of tests
+	- Testing pyramid
+	- Trophy model
+	- Focus on tests that establish clear boundaries and fail for reasons
+	- Need to run quickly and run reliably
+- Different characteristics of tests
+	- Fast vs. Slow
+	- Real vs Fake
+	- solitary vs Sociable (unit vs e2e)
+	- High maintenance vs low
+	- How many changes would make this test fail?
+	- When they fail, how much info do they provide?
+	- Reliable vs not reliable (flaky)
+- Law of Diminishing Marginal Returns
+	- In the context of the portfolio, what is the value of the next test, as you are writing the current test
+	- With e2e tests, they quickly add value as you add them, and as quickly stop returning value at a certain point because you have already tested items together
+	- Whereas unit tests decrease gradually over time
+- Rebalancing - realigning the weightings of a portfolio to its original asset allocation by periodically buying or selling assets
+	- Over time, should evaluate tests and rebalance if tests are not serving you
+	- Idea of shoving behavior down the pyramid. Is something that is being tested in an e2e be more valuable as an integration or unit test?
+- Divestiture - partial or full disposal of a company's operations or assets through sale, exchange, closure, or bankruptcy
+	- Don't be afraid of deleting tests that are not helping or can be covered elsewhere
+- How do you know you are getting a return on your investment?
+	- Code coverage? It is a great tool, also a trap. Which lines of code did my tests execute. Use it carefully.
+	- Defects discovered in production - we want our tests to discover them in development, not production
+	- Will my tests catch defects? Mutation testing - slow to run, but great tool. Runs the entire test suite, then goes to the code and changes items and then reruns tests to see if they catch the failure
+- Downstream impact of defects
+	- Reputation
+	- Confidence
+	- Monetary loss
+- Better faster pipelines, release more frequently with more confidence, reputation and confidence
+- AI - Is testing relevant??
+	- These things are even more valuable
+	- Human writes the test first, agent writes the code is a good workflow
+	- Use tests to keep AI on the rails
+	- Confidence in the code your agent is writing
+	- AI just amplifies everything we are already doing or not doing

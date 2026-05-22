@@ -1,0 +1,34 @@
+- Humility - not asking for help or knowing your limitations can create bad code
+- DRY - Don't repeat yourself
+	- Every piece of knowledge in the system should have one authoritative place
+	- Don't put the same code in multiple places
+- KISS - Keep it simple stupid
+	- Single Responsibility Principle - A function, class, component, or module should have a singular, clear job that it does well
+	- Improves readability and maintainability, reusability and testability
+- YAGNI - You aren't gonna need it
+	- Adding a bunch of things you don't actually need
+- CRUD - Create read update delete
+- Coding Practices
+	- Prefer descriptive names
+- Starting a new project - use the recommended scaffolding. Don't roll your own
+	- Prefer mainstream tools
+	- Research before attempting to write your own library/component/composable
+	- Check docs of tools used
+- Adding a new feature
+	- plan first, ask for feedback
+- Testing - Do it
+	- Write unit tests as you add functionality
+- Vue Best Practices
+	- Read like an outline, not a novel. Should be more lightweight and point to other logic, composables, etc
+- Project structure
+	- Vue style guide
+	- Feature-based structure
+		- src provides reusables, router, etc
+		- do a features section that would have auth, dashboard, user-profile, etc
+- Single-file component naming - kebab and pascal case with multiword are good practices
+- Base component naming - Button, Card, etc. Prefix with Base, App, or V, such as BaseButton
+- ref and reactive - largely use ref everywhere, but reactive may still be good for forms when reassigning the entire object
+- Use detailed props definitions, TypeScript, and validators
+- v-if: avoid complicated template logic. use a computed to trigger the conditions. Use components if more than few lines to reduce complexity
+- Provide/Inject
+- Composables and nesting composables

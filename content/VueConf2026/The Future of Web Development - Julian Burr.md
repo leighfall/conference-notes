@@ -1,0 +1,5 @@
+- Biggest takeaway: Use combos of SSR, SSG, SPA
+- Streaming content - start sending as soon as something is available.
+- Action items
+	- Possibly use AI, determine what components are static vs dynamic. Static ones could be server-side rendered
+	- Look into Suspense

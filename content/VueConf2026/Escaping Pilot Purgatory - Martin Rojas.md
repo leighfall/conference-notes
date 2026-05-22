@@ -1,0 +1,2 @@
+- Biggest takeaway was to make sure you are measuring your pilot with KPIs
+- Kill pilots that are not going to ROI

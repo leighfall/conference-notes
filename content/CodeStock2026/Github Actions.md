@@ -1,0 +1,11 @@
+- simple icons on github for icons
+- Github actions are free up to  about 2000 in private repos and no logic limitations
+- Create a yaml file for the actions, similar to azure pipelines or gitlab-ci
+- Use actions as an automation platform
+- Git scraping. Track changes to the data overtime
+- Languages used by file size . Can use actions to create dynamic readme elements (worth looking at for the testing suite)
+- Home automation by hooking into IoT APIs, such as turning on a light when a build fails
+- Tips
+	- Set timeout minutes in an action so that it doesnt burn through billable hours
+	- Use concurrency to avoid multiple actions running at the same time If you merge two changes that get deployed nearly at the same time, you might have a race condition where the older version ends up overwriting the newest version
+	- 

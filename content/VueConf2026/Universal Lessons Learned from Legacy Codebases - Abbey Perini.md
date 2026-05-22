@@ -1,0 +1,17 @@
+- Mental models
+	- Flow charts and diagrams
+		- Miro, Whimsical, Mermaid
+	- Write documentation
+	- Ask people what you missed or got wrong
+- Practice reading other people's code
+	- Contributing to open source
+	- Summarize a new to you codebase at a high level
+	- Evaluate solution tradeoffs
+- Be careful about using AI to summarize it. Imo, let it speed you up, but you take the real time from there to continue to walk through it
+- Store in long term memory
+	- Science backed memory tips
+	- Strategies and Recall Techniques
+- Approval Testing
+- Abstraction is a double-edged sword
+	- DRY and Cognitive Load
+- If you don't know how you'd improve it, don't complain about it

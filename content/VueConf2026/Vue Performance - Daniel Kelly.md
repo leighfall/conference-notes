@@ -1,0 +1,30 @@
+- The cost of being slow
+	- People leave if it is slow
+	- Google ranks your page on slowness, amongst other KPIs
+	- 100ms feels instant to users. Anything over 10s loses them
+- Ship less
+	- Import only what you use. Default imports often pull in the whole library (good action item to look into)
+	- Find libraries that are tree-shakeable
+	- Named ESM exports
+	- Use JavaScript native functions instead of library
+	- Lazy loading
+	- Re-render less
+		- Prop stability
+		- vmemo with vfor is powerful
+		- shallowRef
+	- Lazy Hydration. Vue 3.5 lets you choose when hydration happens. SSR ships HTML fast (I should learn more about SSR)
+	- Render on user intent. When they go to do something, render ahead of time in the background, instead of always being rendered
+	- SPA, SSG (Nuxt, Astro), SSR
+	- **Start all projects going forward with Nuxt instead of Vue**
+- Fetch Smarter
+	- Avoid request waterfalls - use Promise.all
+	- Cache and dedupe in Pinia Colada
+	- Prefetch data on user intent before the user does anything
+	- Debounce noisy fetches
+	- Bundle analysis - check dependencies and how much it costs to download it
+- Measure Everything - performance check in the devtools
+- Look at vueschool.io
+- console.time for quick profiling
+- List virtualization. Render only what is visible.
+- Slidev skill in Cursor that can generate and iterate slide structure quickly for making slides
+- Unlearn.dev

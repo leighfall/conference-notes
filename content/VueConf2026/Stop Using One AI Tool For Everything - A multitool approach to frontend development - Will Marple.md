@@ -1,0 +1,44 @@
+﻿Works at Black Airplane
+- A lot happens in 6 months in AI
+- There's a new skill in the layer you build around out of the box AI agent capabilities
+- Two ways to fail
+	- Read every line and you don't scale
+	- Read nothing and you skip dark code
+- Agentic engineering is about how much you can responsibly own. 
+- Engineer your own harness
+	- Prompting
+	- Context
+	- Memory
+	- Tools
+- Out of the box, we are all equal
+- Prompting - You are already good at this (or you should be)
+- Context - The working set right now
+	- Always-loaded is things like AGENTS.md, CLAUDE.md
+	- On-demand - retrieved - conventions docs, nested rules files, specs, skills
+	- Context management is about breaking things down so the agent loads only what's relevant to the task at hand
+	- AGENTS.md
+		- What the project is
+		- Stack
+		- Repo Layout
+		- Harness layer taxonomy - the data model, referencing skills, etc. helps improve usage
+		- Diagnostic codes
+		- Security rules - Non-negotiable
+		- Conventions
+		- quality gates
+		- Spec workflow
+		- Roadmap
+		- Out of scope
+		- Working agreement - agent behavior
+	- Nested rule files is a solid rule approach. Can also do Progressive Disclosure, Made of Files (I've done this too! This is the same idea as what I did with my testing documentation). Patterns and Features are big ones
+	- Spec driven development - research-lead, integration-researcher, codebase-explorer
+		- Spec is the artifact you understand. Implement generates code against the spec. You comprehend the spec. The code, you verify. Becomes part of the memory system
+- Memory
+	- .review
+	- specs - spec-memory.db (new idea)
+	- state.json (equivalent of my TestPlans files)
+- Tools
+	- Claude-qa
+		- test-strategist, testgenerator, qa-auditor, regression-tracker, mutation-tester
+	- playwright-skill that's a 200 token summary
+- When in doubt, use a single agent first, and when you become the bottleneck, use multi agents
+- Not all AI generated code deserves equal attention

@@ -1,0 +1,43 @@
+- How to use DevTools effectively - Felipe Flor
+	- Using the `debugger` keyword in any JavaScript. Nice for not having to find where you want a breakpoint in the devtools
+	- Subtree Modification Breakpoints - In Elements, you can right click and set subtree breakpoint in the HTML. Only if accessing a ref in the template itself and using the DOM API
+	- Mocking the Backend - local overrides - Network tab, right click request, override content
+	- Pause on exceptions
+- Survive and Thrive: Your Tech Conference Experience - Nerajno Johnson
+	- Intention, plan, pack
+	- Schedule Like a Pro
+		- Lock your primary sessions early
+		- Have backup sessions
+		- Block time for the hallway track
+		- Read all the conference emails
+		- Check for after hours events
+	- Have a gear checklist
+	- Network without the cringe
+	- Capture Insights, not Transcripts
+		- Cornell method
+	- Shoot your shot - start talking about something you know...
+- Stop Building Franken Components - Alan Rosin
+	- Being made by a bunch of different people. Or even different versions of you
+	- DISC - Dumb, Composable, Intuitive, Single Role
+- Claude Code Mission Control - Marco Ledesma
+	- Look into Claude Code hooks for executing http endpoints
+- Vue.JS Component Analyzer - VSCode extension for visualizing VueJS projects and components - Marco Arruda
+	- What an extension could do for me? Better project overview and analyze complexity
+	- Produces a website graph
+	- Action items:
+		- Take a look at this extension (Vue Component Analyzer)
+- Vasta - A type safe active record Node ORM model layer - David
+	- Didn't get too many notes. Maybe I should look into for the Node ecosystem
+- The Most Important Skills.md File I Own - Stephanie Page
+	- Take notes!
+- AI Driven Development - Caleb Mackey
+	- Users think in natural language, systems need strict parameters
+	- A chat alongside a GIS map
+	- Take unstructured data and make structured
+- AI-Assisted Frontend Modernization - Removing BootstrapVue And Upgrading Legacy Dependencies - Nawed Khan
+	- Used AI to upgrade and modernize the frontend stack
+	- Hah, lots of issues with the migration and AI, but still completed faster than if done by hand
+- Once You See It (Accessibility and Vue) - Vegard Vaeng Bernhardsen
+	- In Norway, started noticing things like beeping traffic lights, tactile paving
+	- POUR - Perceivable, Operable, Understandable, Robust
+	- AI loves accessibility

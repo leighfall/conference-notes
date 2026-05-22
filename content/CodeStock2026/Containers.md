@@ -1,0 +1,33 @@
+- Processes sit on top of docker, which sits on top of host operating system, on top of infra
+- FROM is the base image
+- Image is the actual file, container is the image running
+- An image is immutable file with layers
+- Images built by layers, each of the commands in a dockerfile is considered a layer
+- recommended practice: only include needed layers (security)
+- Layers
+	- Files
+	- Commands
+	- environment variables/labels
+- Interrogate an image
+	- UI tools
+	- run the image, look at files
+	- Export the files
+- Docker has a utillity called Docker Scout for scanning an image
+- types of files
+	- oci - versioning number
+	- index.json file
+	- blobs of the layers
+	- manifest lists all the layers
+- Make images smaller
+	- slim and/or hardened images
+	- use multi-stage build - do a build  in one spot, copy past artifact in the final image
+	- create a minimal base image yourself. You usually do not want to do this
+	- distroless image (github.com/googlecontainertools/distroless)
+- hardened images
+	- docker hardened images, ubuntu chiselled images, chainguard.dev, minimus.io
+- Building your own image
+	- start witth 'from scratch' which is protected and it's empty. Not an image
+	- then copy in what you need
+- Multi-stage builds
+	- 2 images: one to build/compile/do work, one for output image
+- Can exclude items via --exclude, such as the package.json, or use .dockerignore
