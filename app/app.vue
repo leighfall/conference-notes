@@ -18,6 +18,21 @@ html {
   font-family: calibri;
   width: 98%;
   margin: 0 auto;
+  scrollbar-width: thin;
+  scrollbar-color: fade(@white, 20%) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: fade(@white, 20%);
+  border-radius: 3px;
 }
 
 a {

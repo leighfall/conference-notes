@@ -83,6 +83,22 @@ function formatTitle(title: string) {
   max-height: calc(100vh - 100px);
   overflow-y: auto;
   overflow-x: hidden;
+  padding-right: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: fade(@white, 20%) transparent;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: fade(@white, 20%);
+    border-radius: 2px;
+  }
 
   .laptop({
     width: 100%;
