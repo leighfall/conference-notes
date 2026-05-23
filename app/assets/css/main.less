@@ -1,0 +1,28 @@
+@phone-max: 600px;
+@laptop-min: 992px;
+@laptop-max: 1199px;
+@desktop-min: 1200px;
+
+.phone(@styles) {
+    @media screen and (max-width: @phone-max) { @styles(); }
+}
+.phone-laptop(@styles) {
+    @media screen and (max-width: @laptop-max) { @styles(); }
+}
+.laptop(@styles) {
+    @media screen and (max-width: @laptop-max) { @styles(); }
+}
+.laptop-desktop(@styles) {
+    @media screen and (min-width: @phone-max) { @styles(); }
+}
+.desktop(@styles) {
+    @media screen and (min-width: @laptop-min) { @styles(); }
+}
+
+@white: #ffffff;
+@white-light: rgba(255, 255, 255, .65);
+@grey: #242424;
+@blue: #38BDF8;
+@green: #4ADE80;
+@background: rgb(26, 26, 26);
+@box-background: fade(@white-light, 3%);
