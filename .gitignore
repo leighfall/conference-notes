@@ -18,6 +18,10 @@ logs
 .fleet
 .idea
 
+# Personal TODOs — not for public repo
+content/**/VueConf TODO.md
+PLAN.md
+
 # Local env files
 .env
 .env.*
