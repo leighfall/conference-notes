@@ -4,6 +4,12 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
   ],
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/'],
+    },
+  },
   devtools: { enabled: true },
   compatibilityDate: '2024-04-03',
 })
