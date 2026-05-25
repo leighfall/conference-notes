@@ -59,6 +59,9 @@ function handleOutsideClick(e: MouseEvent) {
       <NuxtLink to="/" class="nav-link" :class="{ active: route.path === '/' }" title="Home">
         Home
       </NuxtLink>
+      <a href="https://github.com/leighfall/conference-notes" class="nav-link" target="_blank" rel="noopener noreferrer" title="GitHub">
+        Github
+      </a>
       <a href="https://www.autumnhenderson.com/" class="nav-link" target="_blank" rel="noopener noreferrer" title="Portfolio">
         Portfolio
       </a>
@@ -99,6 +102,15 @@ function handleOutsideClick(e: MouseEvent) {
         @click="handleLinkClick('/')">
         Home
       </NuxtLink>
+      <a
+        href="https://github.com/leighfall/conference-notes"
+        class="nav-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="GitHub"
+        @click="closeMenu()">
+        Github
+      </a>
       <a
         href="https://www.autumnhenderson.com/"
         class="nav-link"
