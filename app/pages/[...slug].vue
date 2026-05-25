@@ -62,10 +62,10 @@ if (!page.value) {
   :deep(ul),
   :deep(ol) {
     padding-left: 1.5rem;
-    margin: 2vh 0;
+    margin: 0;
 
     li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0;
     }
   }
 

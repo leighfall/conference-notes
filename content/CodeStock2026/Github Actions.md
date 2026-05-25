@@ -1,4 +1,4 @@
-- simple icons on github for icons
+﻿- simple icons on github for icons
 - Github actions are free up to  about 2000 in private repos and no logic limitations
 - Create a yaml file for the actions, similar to azure pipelines or gitlab-ci
 - Use actions as an automation platform
@@ -8,4 +8,3 @@
 - Tips
 	- Set timeout minutes in an action so that it doesnt burn through billable hours
 	- Use concurrency to avoid multiple actions running at the same time If you merge two changes that get deployed nearly at the same time, you might have a race condition where the older version ends up overwriting the newest version
-	- 
