@@ -28,3 +28,4 @@ PLAN.md
 !.env.example
 
 .vercel
+.env*
