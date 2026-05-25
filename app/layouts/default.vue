@@ -1,12 +1,16 @@
 <script setup lang="ts">
+import type { ContentNavigationItem } from '@nuxt/content'
+
 const { data: navigation } = await useAsyncData('nav', () =>
-  $fetch<any[]>('/api/navigation')
+  $fetch<ContentNavigationItem[]>('/api/navigation')
 )
+
+const responsive = useResponsiveDetector()
 
 const openSections = ref<Record<string, boolean>>({})
 
 const conferences = computed(() =>
-  navigation.value?.filter((item: any) => item.children?.length) ?? []
+  navigation.value?.filter((item) => item.children?.length) ?? []
 )
 
 function isOpen(path: string) {
@@ -16,6 +20,12 @@ function isOpen(path: string) {
 function handleToggle(path: string, opening: boolean) {
   openSections.value = {}
   if (opening) openSections.value[path] = true
+}
+
+function handleLinkClick() {
+  if (!responsive?.isDesktop?.value) {
+    openSections.value = {}
+  }
 }
 
 function formatTitle(title: string) {
@@ -37,7 +47,7 @@ function formatTitle(title: string) {
           <li
             v-for="talk in conference.children"
             :key="talk.path">
-            <NuxtLink :to="talk.path" class="talk-link">
+            <NuxtLink :to="talk.path" class="talk-link" @click="handleLinkClick">
               {{ talkTitle(talk.stem ?? talk.path) }}
             </NuxtLink>
           </li>
