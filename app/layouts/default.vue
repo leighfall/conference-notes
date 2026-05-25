@@ -37,7 +37,7 @@ function formatTitle(title: string) {
           <li
             v-for="talk in conference.children"
             :key="talk.path">
-            <NuxtLink :to="talk.path" class="talk-link">
+            <NuxtLink :to="talk.path" class="talk-link" :title="talkTitle(talk.stem ?? talk.path)">
               {{ talkTitle(talk.stem ?? talk.path) }}
             </NuxtLink>
           </li>
@@ -79,8 +79,8 @@ function formatTitle(title: string) {
   flex-shrink: 0;
   align-self: start;
   position: sticky;
-  top: 80px;
-  max-height: calc(100vh - 100px);
+  top: 0;
+  max-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
   padding-right: 6px;
@@ -179,6 +179,7 @@ function formatTitle(title: string) {
   min-width: 0;
   padding-bottom: 4rem;
   line-height: 1.7;
+  align-self: start;
 
   .laptop({
     width: 100%;
