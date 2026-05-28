@@ -2,4 +2,4 @@
 - Streaming content - start sending as soon as something is available.
 - Action items
 	- Possibly use AI, determine what components are static vs dynamic. Static ones could be server-side rendered
-	- Look into Suspense
+	- Look into [Suspense](https://vuejs.org/guide/built-ins/suspense){target="_blank" title="Vue Suspense — built-in component for managing async dependencies in the component tree"}

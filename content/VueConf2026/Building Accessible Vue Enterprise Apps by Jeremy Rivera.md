@@ -21,4 +21,4 @@ Vue Considerations
 - Shift left with accessibility
 Action Items
 - Make things accessible! Possibly every time I touch a file, what can I do to make it acceessible? Or, can I start with reusable components?
-- Look into Embedded model
+- Look into [Embedded model](https://testparty.ai/blog/accessibility-governance-coe-vs-embedded){target="_blank" title="Embedded Model — distributing accessibility expertise across product teams rather than centralizing it"}

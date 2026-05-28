@@ -20,14 +20,14 @@
 	- Being made by a bunch of different people. Or even different versions of you
 	- DISC - Dumb, Composable, Intuitive, Single Role
 - Claude Code Mission Control - Marco Ledesma
-	- Look into Claude Code hooks for executing http endpoints
+	- Look into [Claude Code hooks](https://code.claude.com/docs/en/hooks){target="_blank" title="Claude Code Hooks — lifecycle hooks including HTTP endpoint support"} for executing http endpoints
 - Vue.JS Component Analyzer - VSCode extension for visualizing VueJS projects and components - Marco Arruda
 	- What an extension could do for me? Better project overview and analyze complexity
 	- Produces a website graph
 	- Action items:
 		- Take a look at this extension (Vue Component Analyzer)
-- Vasta - A type safe active record Node ORM model layer - David
-	- Didn't get too many notes. Maybe I should look into for the Node ecosystem
+- [Vasta](https://vastajs.com/){target="_blank" title="Vasta — type-safe active record Node ORM model layer"} - A type safe active record Node ORM model layer - David
+	- Didn't get too many notes. Maybe I should look into [Vasta](https://vastajs.com/){target="_blank" title="Vasta — type-safe active record Node ORM model layer"} for the Node ecosystem
 - The Most Important Skills.md File I Own - Stephanie Page
 	- Take notes!
 - AI Driven Development - Caleb Mackey

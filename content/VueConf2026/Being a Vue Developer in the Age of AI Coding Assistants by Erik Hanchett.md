@@ -22,7 +22,7 @@
 - Spec Driven Development
 	- Spec-Kit
 	- Claude plan mode
-	- grill-me is a cool spec that asks clarifying questions
+	- [grill-me](https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md){target="_blank" title="grill-me — Claude Code skill that interviews you about requirements before writing any code"} is a cool spec that asks clarifying questions
 - Vibe code prototypes
 - Action Items
 	- Take a look at some of the links ahead
@@ -30,4 +30,4 @@
 	- Based on the code review checkpoint, how can we make code reviews better and more efficient? What is a good workflow?
 		- I found for a lot of items, I could have Claude create seed data for different scenarios to take a look at them in the UI (the 'empty' case, a bunch of data, standard use, etc). I wonder if there is a way to streamline this
 		- I would ask Claude to summarize changes, tell me how to test changes (if not provided by the developer), walk me through code, etc.
-	- Look into grill-me
+	- Look into [grill-me](https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md){target="_blank" title="grill-me — Claude Code skill that interviews you about requirements before writing any code"}

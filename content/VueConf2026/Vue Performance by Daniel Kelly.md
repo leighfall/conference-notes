@@ -23,7 +23,7 @@
 	- Debounce noisy fetches
 	- Bundle analysis - check dependencies and how much it costs to download it
 - Measure Everything - performance check in the devtools
-- Look at vueschool.io
+- Look at [vueschool.io](https://vueschool.io/){target="_blank" title="Vue School — online Vue.js courses and tutorials"}
 - console.time for quick profiling
 - List virtualization. Render only what is visible.
 - Slidev skill in Cursor that can generate and iterate slide structure quickly for making slides

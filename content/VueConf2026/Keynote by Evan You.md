@@ -15,14 +15,14 @@
 - Vue Tooling
 	- Props completion rewritten to follow native TS behavior
 	- Fallthrough attributes checked
-- Take a look at Vize
+- Take a look at [Vize](https://vizejs.dev/){target="_blank" title="Vize — unofficial high-performance Vue.js toolchain written in Rust"}
 - Verter is an experimental vue compiler and lsp implementation
 - Vite 8
 	- Rolldown is Rust-based built on top of OXC and has feature parity with esbuild and rollup.
 	- vite.dev/blog/announcing-vite8
 - Oxlint - eslint built-in rules test conformance
 - Oxfmt - now in beta and 100% prettier conformance
-- Look into Vite+. In Alpha. may replace all the config files. viteplus.dev
+- Look into [Vite+](https://voidzero.dev/posts/announcing-vite-plus-alpha){target="_blank" title="Vite+ Alpha — unified toolchain combining Vite, Vitest, Oxlint, Oxfmt, and Rolldown"}. In Alpha. may replace all the config files.
 - Why does fast and unified matter in AI era
 	- Loop is making decisions using AGENTS.md, skills, MCP, rules, and then it reaches for tools including guardrails (linters), normalization, validation
 	- We want the last part to happen as early as possible
